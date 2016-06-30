@@ -9,6 +9,7 @@ import org.w3c.dom.Text;
 
 public class MadLibsOutput extends AppCompatActivity {
     TextView mMadLibsOutput;
+    String mOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +25,19 @@ public class MadLibsOutput extends AppCompatActivity {
         String animals = intent.getStringExtra("Animals");
         String gameName = intent.getStringExtra("Game Name");
 
+
+        mOutput = ("A vacation is when you take a trip to some " + adj1.toUpperCase()
+                + " place with your " + adj2.toUpperCase() + " family. Usually, you go to some place that is near a "
+                + noun1.toUpperCase() + " or up on a " + noun2.toUpperCase() + ". A good vacation place is one where you can ride "
+                + animals.toUpperCase() + " or play " + gameName.toUpperCase() + ".");
+
+        //not sure how to do bold
+
         mMadLibsOutput = (TextView)findViewById(R.id.textview_madlibs_output);
-        mMadLibsOutput.setText("This will be the output, it will have" + adj1
-                + adj2 + noun1 + noun2 + animals + gameName);
+        mMadLibsOutput.setText(mOutput);
+
+
+
 
     }
 }

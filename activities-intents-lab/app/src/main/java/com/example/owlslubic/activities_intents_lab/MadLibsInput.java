@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MadLibsInput extends AppCompatActivity {
     EditText mAdj1;
@@ -41,15 +42,33 @@ public class MadLibsInput extends AppCompatActivity {
                 intent.putExtra("Noun2", mNoun2.getText().toString());
                 intent.putExtra("Animals", mAnimals.getText().toString());
                 intent.putExtra("Game Name", mGameName.getText().toString());
+
+
+
                 startActivity(intent);
 
 
+
             }
+
+
         };
+
+        //how do you make a toast happen when you hit the button?
+       // Toast.makeText(MadLibsInput.this, "Here we go!", Toast.LENGTH_SHORT).show();
         mSumbit.setOnClickListener(submit);
 
 
 
 
+
+        //dont know how to do this
+      //  if(//how do you make it say any input is null){
+      //      EditText.setError("please write something!");
+        }
+
+
+
+
     }
-}
+

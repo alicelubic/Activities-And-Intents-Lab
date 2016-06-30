@@ -17,44 +17,52 @@
 
         <EditText
             android:id="@+id/edittext_first_adj"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:hint="adjective" />
+
+
+        <EditText
+            android:id="@+id/edittext_second_adj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
             android:hint="adjective" />
 
         <EditText
             android:id="@+id/edittext_first_noun"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="27sp"
             android:hint="noun" />
 
         <EditText
             android:id="@+id/edittext_second_noun"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="27sp"
             android:hint="noun" />
 
         <EditText
-            android:id="@+id/edittext_second_adj"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="adjective" />
-
-        <EditText
             android:id="@+id/edittext_animals"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="27sp"
             android:hint="animals (plural)" />
 
         <EditText
             android:id="@+id/edittext_game_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="27sp"
             android:hint="a name of a game" />
 
         <Button
             android:id="@+id/button_submit"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="read your mad lib!"/>
 
     </LinearLayout>
