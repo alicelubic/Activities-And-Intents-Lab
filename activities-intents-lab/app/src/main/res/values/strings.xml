@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">activities-intents-lab</string>
+    <string name="title_activity_mad_libs_output">MadLibsOutput</string>
+</resources>
